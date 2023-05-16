@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!-- CSS only -->
+	<link rel="stylesheet" href="../css/style-main.css">
+	<link rel="stylesheet" href="../css/style-patterns.css">
+	<link rel="stylesheet" href="../css/style-simulate.css">
+
+	<title>Projeto BrainDUCK - TCC</title>
+</head>
+<body>
+	<nav>
+		<ul class="nav-list">
+			<li class="nav-link"><a href="simulates.html">INSTITUIÇÕES</a><div></div></li>
+			<li class="nav-link"><a href="questions.html">QUESTÕES</a><div></div></li>
+			<li class="title-link">
+				<a href="index.html"><img src="../img/brainduck-title.png" draggable="false"></a>
+				<div></div>
+			</li>
+			<li class="nav-link"><a href="">PERFIL</a><div></div></li>
+			<li class="nav-link"><a href="">SOBRE NÓS</a><div></div></li>
+		</ul>
+		<div class="dropdown">
+			<button class="toggle">
+				<ion-icon name="menu" id="menu"></ion-icon>
+			</button>
+			<div class="link-list" style="display: none;">
+				<div class="link-drop-item"><a href="simulates.html">INSTITUIÇÕES</a><div></div></div>
+				<div class="link-drop-item"><a href="questions.html">QUESTÕES</a></div>
+				<div class="link-drop-item"><a href="">PERFIL</a></div>
+				<div class="link-drop-item"><a href="">SOBRE NÓS</a></div>
+			</div>
+		</div>
+	</nav>
+
+	<article class="content">
+		<section class="introduction-text">
+			<span class="i-icon"><ion-icon name="alert-outline"></ion-icon></span>
+			<span class="resume">
+				Busque entre inúmeras provas de diversas instituições a partir da lista abaixo.
+				Selecione o nome de uma instituição que suas provas serão listadas.
+			</span>
+		</section>
+
+		<section class="list-w-info">
+			<div>
+				<input class="search" type="text" placeholder="Procurar na lista">
+				<div class="inst-list" id="examContainer"></div>
+			</div>
+		</section>
+	</article>
+
+	<div class="footer-div">
+		<footer>
+			<a href="/">
+				
+			</a>
+			<span>© 2023 Quack, Inc</span>
+		</footer>
+	</div>
+
+	<script src="../js/headerDropdown.js"></script>
+	<script src="../js/simulatesBundle.js"></script>
+</body>
+</html>
