@@ -30,6 +30,10 @@ a {
 ul {
     list-style: none;
 }
+button {
+    appearance: none;
+    -webkit-appearance: none;
+}
 /* ANIMATIONS */
 @keyframes going-up {
     from { transform: translateY(100%); }
