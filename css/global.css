@@ -31,6 +31,7 @@ ul {
     list-style: none;
 }
 button {
+    color: #000;
     appearance: none;
     -webkit-appearance: none;
 }
