@@ -8,79 +8,50 @@
 	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 	
 	<!-- CSS only -->
-	<link rel="stylesheet" href="../css/style-main.css">
-	<link rel="stylesheet" href="../css/style-patterns.css">
-	<link rel="stylesheet" href="../css/style-questions.css">
+	<link rel="stylesheet" href="./css/questions.css">
 	
 	<title>Projeto TCC</title>
 	
 </head>
 
 <body>
-	<nav>
-		<ul class="nav-list">
-			<li class="nav-link"><a href="simulates.html">INSTITUIÇÕES</a><div></div></li>
-			<li class="nav-link"><a href="questions.html">QUESTÕES</a><div></div></li>
-			<li class="title-link">
-				<a href="index.html"><img src="../img/brainduck-title.png" draggable="false"></a>
-				<div></div>
-			</li>
-			<li class="nav-link"><a href="">PERFIL</a><div></div></li>
-			<li class="nav-link"><a href="">SOBRE NÓS</a><div></div></li>
-		</ul>
-		<div class="dropdown">
-			<button class="toggle">
-				<ion-icon name="menu" id="menu"></ion-icon>
-			</button>
-			<div class="link-list" style="display: none;">
-				<div class="link-drop-item"><a href="simulates.html">INSTITUIÇÕES</a><div></div></div>
-				<div class="link-drop-item"><a href="questions.html">QUESTÕES</a></div>
-				<div class="link-drop-item"><a href="">PERFIL</a></div>
-				<div class="link-drop-item"><a href="">SOBRE NÓS</a></div>
-			</div>
-		</div>
-	</nav>
+	<nav></nav>
 
 	<article class="dark-veil"></article>
 	
-	<article class="content">
-		<div class="grid-container grid-row">
+	<main>
+		<section class="introduction">
+			<p>Aqui você tem a opção de resolver questões de forma individualizada, 
+			com a possibilidade de filtrá-las de acordo com uma ou mais categorias de sua preferência. 
+			<b>Basta clicar nas categorias desejadas, selecionar os filtros adequados e, em seguida, realizar a busca.</b> 
+			Dessa forma, você poderá personalizar sua experiência, encontrando exatamente o que procura de maneira mais eficiente e assertiva.</p>
+		</section>
+		
+		<section class="fs-box">
+			<button id="searchQuestions"><p>BUSCAR</p></button>
 			
-			<div class="introduction-text duckwood">
-				<p>
-					Aqui você pode realizar questões separadas, filtrando-as em uma ou mais categorias que desejar. 
-					Clique nas categorias, depois escolha os filtros e então realize a busca.
-				</p>
-			</div>
-			
-			<div class="fs-box">
-				<div class="filter-menu">
-					<div id="institution" class="search-div">
-						<button class="search-item" id="searchInstitution">INSTITUIÇÃO</button>
-					</div>
-					
-					<div id="subject" class="search-div">
-						<button class="search-item" id="searchSubject">ASSUNTO</button>
-					</div>
-					
-					<div id="subSubject" class="search-div">
-						<button class="search-item" id="searchSubSubject">SUB-TEMA</button>
-					</div>
-
-					<button id="searchQuestions"><p>BUSCAR</p></button>
+			<div class="filter-menu">
+				<div id="institution" class="search-div">
+					<button class="search-item" id="searchInstitution">INSTITUIÇÃO</button>
 				</div>
 				
-				<div class="search-grid sg-tcolumn-4"></div>
+				<div id="subject" class="search-div">
+					<button class="search-item" id="searchSubject">ASSUNTO</button>
+				</div>
+				
+				<div id="subSubject" class="search-div">
+					<button class="search-item" id="searchSubSubject">SUB-TEMA</button>
+				</div>
 			</div>
-		</div>
-	</article>
+
+			<div class="search-grid sg-tcolumn-4"></div>
+		</section>
+	</main>
 	
-	<div class="footer-div">
-		<footer>
-			<span>© 2023 Quack, Inc</span>
-		</footer>
-	</div>
+	<footer><div class="footer-content">
+        <span>© 2023 Quack, Inc</span>
+    </div></footer>
 	
-	<script src="../js/headerDropdown.js"></script>
-	<script src="../js/questionScript.js"></script>
+	<!-- <script src="./js/headerDropdown.js"></script> -->
+	<script src="./js/questionsBundle.js"></script>
 </body>

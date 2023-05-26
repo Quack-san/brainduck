@@ -1,75 +1,39 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="pt-br">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-	
-	<link rel="stylesheet" href="../css/style-main.css">
-	<link rel="stylesheet" href="../css/style-patterns.css">
-	<link rel="stylesheet" href="../css/style-testSimulate.css">
-	
-	<title>Projeto TCC</title>
-</head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/test-page.css">
 
+    <title>Brainduck</title>
+</head>
 <body>
-	<nav>
-		<ul class="nav-list">
-			<li class="nav-link"><a href="simulates.html">INSTITUIÇÕES</a><div></div></li>
-			<li class="nav-link"><a href="questions.html">QUESTÕES</a><div></div></li>
-			<li class="title-link">
-				<a href="index.html"><img src="../img/brainduck-title.png" draggable="false"></a>
-				<div></div>
-			</li>
-			<li class="nav-link"><a href="">PERFIL</a><div></div></li>
-			<li class="nav-link"><a href="">SOBRE NÓS</a><div></div></li>
-		</ul>
-		<div class="dropdown">
-			<button class="toggle">
-				<ion-icon name="menu" id="menu"></ion-icon>
-			</button>
-			<div class="link-list" style="display: none;">
-				<div class="link-drop-item"><a href="simulates.html">INSTITUIÇÕES</a><div></div></div>
-				<div class="link-drop-item"><a href="questions.html">QUESTÕES</a></div>
-				<div class="link-drop-item"><a href="">PERFIL</a></div>
-				<div class="link-drop-item"><a href="">SOBRE NÓS</a></div>
-			</div>
-		</div>
-	</nav>
+    <nav></nav>
 	
 	<article class="dark-veil"></article>
-	
-	<article class="content">
-		<!-- Cover of the test, with his name, year and time to complete -->
-		<div class="flex-container centralize">
+
+    <main>
+        <section>
 			<div class="test-cover">
-				<div class="test-informations flex-container duckwood b-round">
-					<div class="institution-name flex-container">
-						<h2 class="fit-wh" id="test-name">...</h2>
-						<h4 class="fit-wh" id="test-year">...</h4>
+				<div class="test-informations">
+					<div class="institution-name">
+						<h2 id="test-name">...</h2>
+						<h4 id="test-year">...</h4>
 					</div>
-					<img id="institution-logo" src="" alt="place logo">
+
+					<div class="test-timer">
+						<div><input type="radio" name="timer" id="withT"> <label for="withT" id="testTime"></label></div>
+						<div><input type="radio" name="timer" id="noT"> <label for="noT">Sem tempo</label></div>
+					</div>
 				</div>
 
-				<!-- Begin test -->
-				<div class="flex-container centralize" id="startDiv">
-					<button id="btnStartTest">Iniciar</button>
-				</div>
-				
-				<div class="test-timer">
-					<span>Realizar a prova com tempo?</span>
-					<div class="times">
-						<button id="testTime" role="button">...</button>
-						<button class="noTime" id="noTime" role="button">Sem tempo</button>
-					</div>
-					<div class="bg-icon"><ion-icon name="timer-outline"></ion-icon></div>
-				</div>
+				<button id="btnStartTest"><span>COMEÇAR</span></button>
 			</div>
-		</div>
-		<!--  -->
-		<section class="test-ground">
+		</section>
+        <!--  -->
+        <section class="test-ground">
 			<div class="left-popup">
 				<div class="count-down duckwood">
 					<label id="countDown">...</label>
@@ -148,22 +112,21 @@
 			</div>
 			<button id="endTest" class="final-end">FINALIZAR</button>
 		</section>
-								<!-- ------------------------------------------------------ -->
-		<div id="supplementaryText" style="display: none; position: absolute; top: 50%; left: 50%; background-color: brown;"></div>
-		<div id="questionImage" style="display: none; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);">
-			<img src="#" alt="" id="">
-		</div>
-	</article>
+		<!--  -->
+		<section>
+			<div id="supplementaryText" style="display: none; position: absolute; top: 50%; left: 50%; background-color: brown;"></div>
+			<div id="questionImage" style="display: none; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);">
+				<img src="#" alt="" id="">
+			</div>
+		</section>
+    </main>
 
-	<div class="footer-div">
-		<footer>
-			<a href="/">
-				
-			</a>
-			<span>© 2023 Quack, Inc</span>
-		</footer>
-	</div>
+    <footer><div class="footer-content">
+        <span>© 2023 Quack, Inc</span>
+    </div></footer>
 
-	<script src="../js/headerDropdown.js"></script>
-	<script src="../js/testSimulateBundle.js"></script>
+	<!-- <script src="./js/headerDropdown.js"></script> -->
+	<script src="./js/loadTest.js"></script>
+	<script src="./js/testSimulateBundle.js"></script>
 </body>
+</html>

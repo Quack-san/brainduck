@@ -1,52 +1,49 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="pt-br">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/index.css">
 
-	<link rel="stylesheet" href="../css/style-main.css">
-	<link rel="stylesheet" href="../css/style-patterns.css">
-	<link rel="stylesheet" href="../css/style-index.css">
-	
-	<title>Projeto TCC</title>
+    <title>Brainduck</title>
 </head>
-
 <body>
-	<nav>
-		<ul class="nav-list">
-			<li class="nav-link"><a href="simulates.html">INSTITUIÇÕES</a><div></div></li>
-			<li class="nav-link"><a href="questions.html">QUESTÕES</a><div></div></li>
-			<li class="title-link">
-				<a href=""><img src="../img/brainduck-title.png" draggable="false"></a>
-				<div></div>
-			</li>
-			<li class="nav-link"><a href="">PERFIL</a><div></div></li>
-			<li class="nav-link"><a href="">SOBRE NÓS</a><div></div></li>
-		</ul>
-		<div class="dropdown">
-			<button class="toggle">
-				<ion-icon name="menu" id="menu"></ion-icon>
-			</button>
-			<div class="link-list" style="display: none;">
-				<div class="link-drop-item"><a href="simulates.html">INSTITUIÇÕES</a><div></div></div>
-				<div class="link-drop-item"><a href="questions.html">QUESTÕES</a></div>
-				<div class="link-drop-item"><a href="">PERFIL</a></div>
-				<div class="link-drop-item"><a href="">SOBRE NÓS</a></div>
-			</div>
-		</div>
-	</nav>
+    <nav>
+        <ul class="nav-links">
+            <div class="title"><a href="./index.html">
+                <img src="./img/brainduck-title.png" alt="Brainduck" 
+                height="35px" draggable="false">
+            </a></div>
+            <li class="nav-itens nav-left">
+                <a href="./simulates.html"><span>SIMULADOS</span></a>
+                <div></div>
+            </li>
+            <li class="nav-itens nav-right">
+                <a href="./questions.html"><span>QUESTÕES</span></a>
+                <div></div>
+            </li>
+        </ul>
+        <div class="dropdown">
+            <button></button>
+            <ul class="dropdown-links">
+                <li class="nav-itens"><a href=""><span>SIMULADOS</span></a></li>
+                <li class="nav-itens"><a href=""><span>QUESTÕES</span></a></li>
+                <li class="nav-itens"><a href=""><span>PERFIL</span></a></li>
+                <li class="nav-itens"><a href=""><span>SOBRE NÓS</span></a></li>
+            </ul>
+        </div>
+    </nav>
 
-	<main class="content">
-		<section>
+    <main>
+        <section>
 			<div class="div-h1">
 				<hr class="hr1">
 				<h1>QUEM SOMOS</h1>
 				<hr class="hr2">
 			</div>
-			<p class="p-h1">A Quack Inc nasceu da parceria entre dois jovens entusiastas da programação. 
+			<p class="p-h1">A <b>Quack Inc</b> nasceu da parceria entre dois jovens entusiastas da programação. 
 				Nosso objetivo é ajudar outros estudantes em relação a exames em instituições de 
 				ensino superior e áreas correlatas. Oferecemos provas e questões de forma rápida 
 				e objetiva, para que os usuários possam se capacitar e se preparar com eficiência. 
@@ -54,36 +51,32 @@
 				perda de tempo. Acreditamos que o conhecimento é a chave para o sucesso, e estamos 
 				comprometidos em fornecer os recursos necessários para que os usuários possam alcançar 
 				seus objetivos educacionais.</p>
+            <p class="p2-h1">A <b>Quack Inc</b> nasceu da parceria entre dois jovens entusiastas da programação. 
+                Nosso objetivo é ajudar outros estudantes em relação a exames em instituições de 
+                ensino superior e áreas correlatas.
+                Nossa plataforma é uma opção viável para treinamento e aprimoramento, sem enrolação ou 
+                perda de tempo. Acreditamos que o conhecimento é a chave para o sucesso, e estamos 
+                comprometidos em fornecer os recursos necessários para que os usuários possam alcançar 
+                seus objetivos educacionais.</p>
 			
 			<div class="card-grid">
 				<div class="cg-item">
-					<a href="../simulates.html">INSTITUIÇÕES</a>
-					<p>Faça uma prova de admição para testar seus conhecimentos na página de 
-					instituições</p>
+					<a href="./simulates.html">INSTITUIÇÕES</a>
+					<p>Avalie seus conhecimentos realizando uma simulado nesta seção onde as provas catalógadas são listadas para você</p>
 				</div>
 				<div class="cg-item">
-					<a href="../questions.html">QUESTÕES</a>
+					<a href="./questions.html">QUESTÕES</a>
 					<p>Opte por questões práticas montadas aleatóriamente, mas filtradas de 
 					acordo com você!</p>
 				</div>
-				<div class="cg-item">
-					<a href="">PERFIL</a>
-					<p>Manteremos um registro de seus esforço	s para que encontre o que mais te 
-						dificulta.</p>
-				</div>
 			</div>
 		</section>
-	</main>
+    </main>
+    
+    <footer><div class="footer-content">
+        <span>© 2023 Quack, Inc</span>
+    </div></footer>
 
-	<div class="footer-div">
-		<footer>
-			<a href="/">
-				
-			</a>
-			<span>© 2023 Quack, Inc</span>
-		</footer>
-	</div>
-	
-	<script src="../dist/js/headerDropdown.js"></script>
+    <!-- <script src="./js/headerDropdown.js"></script> -->
 </body>
 </html>

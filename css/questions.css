@@ -1,0 +1,126 @@
+@import "./global.css";
+
+.introduction {
+    margin-block: 20px;
+    margin-inline: 20px;
+    padding: 10px;
+    background-color: #eee;
+    border-radius: 15px;
+    box-shadow: 1px 1px #bbb;
+    font-size: 1.2em;
+    text-indent: 20px;
+}
+.fs-box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.filter-menu {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.search-item {
+    padding: 10px;
+    padding-inline: 30px;
+    background-color: #fb2;
+    border-radius: 5px;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+.search-item:hover, .search-item:focus-within {
+    background-color: #f90;
+}
+#searchQuestions {
+    padding: 5px;
+    margin-inline: 20px;
+    background-color: #eee;
+    border-radius: 15px;
+    box-shadow: 1px 1px #bbb;
+    font-size: 2em;
+}
+#searchQuestions:hover, #searchQuestions:focus-within {
+    background-color: #ddd;
+}
+.search-grid {
+    display: grid;
+    padding: 10px;
+    gap: 20px;
+}
+.sg-tcolumn-2 {
+    grid-template-columns: repeat(2, 1fr);
+}
+.sg-tcolumn-4 {
+    grid-template-columns: repeat(4, 1fr);
+}
+.tag {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 5px;
+    width: max-content;
+    background-color: #742;
+    border-radius: 5px;
+    color: #fff;
+}
+.tag button {
+    padding: 5px;
+    background-color: #fff;
+    border-radius: 5px;
+    font-weight: bolder;
+    color: #f00;
+}
+.subject-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    height: 80px;
+    background-color: #f90;
+    border-radius: 15px;
+    font-size: 1.4em;
+    font-weight: bold;
+}
+.subsubject-item {
+    background-color: #f90;
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: center;
+}
+.subsubject-item p {
+    padding: 10px;
+    font-size: 1.6em;
+    font-weight: bold;
+}
+.subsubject-item div {
+    background-color: #fb3;
+    border-radius: 0;
+}
+@media screen and (max-width: 650px) {
+    .filter-menu {
+        gap: 10px;
+        font-size: .8em;
+    }
+    .sg-tcolumn-2 {
+        grid-template-columns: 1fr;
+    }
+    .sg-tcolumn-4 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width: 500px) {
+    .introduction {
+        font-size: .8em;
+    }
+    #searchQuestions {
+        font-size: 1.4em;
+    }
+    .filter-menu {
+        flex-direction: column;
+        align-items: center;
+    }
+    .search-grid {
+        font-size: .8em;
+    }
+}

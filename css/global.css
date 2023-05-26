@@ -1,0 +1,41 @@
+@import "./nav.css";
+@import "./footer.css";
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    background-color: transparent;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    cursor: default;
+    display: flex;
+    flex-direction: column;
+    min-height: 100dvh;
+}
+.nav-links, main, .footer-content {
+    max-width: 1500px;
+    margin-inline: auto;
+}
+main {
+    flex: 1;
+    animation: fade-in 1.5s;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+ul {
+    list-style: none;
+}
+/* ANIMATIONS */
+@keyframes going-up {
+    from { transform: translateY(100%); }
+    to { transform: translateY(0); }
+}
+@keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}

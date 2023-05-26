@@ -1,4 +1,10 @@
+@import "./global.css";
+
+main {
+    padding-inline: 20px;
+}
 .introduction-text {
+    max-width: 800px;
     margin-inline: auto;
     margin-block: 30px;
     display: flex;
@@ -25,6 +31,12 @@
     border-radius: 15px;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
+    font-size: 1.4em;
+}
+#number {
+    color: #f90;
+    font-size: 1.4em;
+    text-shadow: 1px 0 #000;
 }
 .list-w-info {
     display: flex;
@@ -44,8 +56,8 @@
     border-bottom-right-radius: 5px;
 }
 .inst-list {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 .inst-btn {
     border: none;
@@ -85,23 +97,20 @@
     gap: 5px;
 }
 .exam {
-    font-size: 2em;
-    padding: 5px;
+    padding: 10px;
+    border-radius: 5px;
     background-image: linear-gradient(
         to top right,
         #9c3900,
         #d65600
     );
     color: white;
-    border-radius: 5px;
 }
-@media only screen and (max-width: 1400px) {
-    .exam {
-        font-size: 1.5em;
-    }
+.exam span {
+    font-size: 1.5em;
 }
-@media only screen and (max-width: 900px) {
-    .exam {
-        width: 40%;
+@media screen and (max-width: 550px) {
+    .resume {
+        font-size: 1em;
     }
 }
