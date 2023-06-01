@@ -12,41 +12,59 @@
     <title>Document</title>
 </head>
 <body>
-    <nav></nav>
+    <nav>
+        <ul class="nav-links">
+            <div class="title"><a href="./index.html">
+                <img src="./img/brainduck-title.png" alt="Brainduck" 
+                height="35px" draggable="false">
+            </a></div>
+            <li class="nav-itens nav-left">
+                <a href="./simulates.html"><span>SIMULADOS</span></a>
+                <div></div>
+            </li>
+            <li class="nav-itens nav-right">
+                <a href="./questions.html"><span>QUESTÕES</span></a>
+                <div></div>
+            </li>
+        </ul>
+    </nav>
     
     <main>
-        <div class="question-board">
-            <div class="supp">
-                <button class="supplementary" id="supplementaryTextButton">
-                    Esta questão possui texto complementar, clique aqui para ver.
-                </button>
-                <button class="supplementary" id="questionImageButton">
-                    Imagens
-                </button>
-            </div>
+        <div class="test-ground">
+            <div class="display-question">
+                <div class="supp">
+                    <button class="supplementary" id="supplementaryTextButton">
+                        Esta questão possui texto complementar, clique aqui para ver.
+                    </button>
+                    <button class="supplementary" id="questionImageButton">
+                        Imagens
+                    </button>
+                </div>
 
-            <div class="statement">
-                <label id="questionContent"></label>
-            </div>
+                <div class="statement">
+                    <label id="questionContent"></label>
+                </div>
 
-            <div class="questions">
-                <div><span>A</span>
-                    <label class="alternative" alternative="A"></label>
-                </div>
-                <div><span>B</span>
-                    <label class="alternative" alternative="B"></label>
-                </div>
-                <div><span>C</span>
-                    <label class="alternative" alternative="C"></label>
-                </div>
-                <div><span>D</span>
-                    <label class="alternative" alternative="D"></label>
-                </div>
-                <div><span>E</span>
-                    <label class="alternative" alternative="E"></label>
+                <div class="questions">
+                    <div><span>A</span>
+                        <label class="alternative" alternative="A"></label>
+                    </div>
+                    <div><span>B</span>
+                        <label class="alternative" alternative="B"></label>
+                    </div>
+                    <div><span>C</span>
+                        <label class="alternative" alternative="C"></label>
+                    </div>
+                    <div><span>D</span>
+                        <label class="alternative" alternative="D"></label>
+                    </div>
+                    <div><span>E</span>
+                        <label class="alternative" alternative="E"></label>
+                    </div>
                 </div>
             </div>
         </div>
+
         <div id="supplementaryText"></div>
         <div id="questionImage" style="display: none; position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);">
 			<img src="#" alt="" id="">
@@ -60,7 +78,6 @@
         <span>© 2023 Quack, Inc</span>
     </div></footer>
     
-    <!-- <script src="../dist/js/headerDropdown.js"></script> -->
     <script src="./js/filteredQuestionsBundle.js"></script>
 </body>
 </html>

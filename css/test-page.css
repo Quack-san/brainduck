@@ -1,4 +1,5 @@
 @import "./global.css";
+@import "./js-patterns.css";
 
 /* TEST COVER */
 .test-cover {
@@ -75,12 +76,13 @@
 	display: grid;
 	grid-template-columns: 1fr 6fr 1fr;
 	place-items: center;
-	overflow: hidden;
+	/* overflow: hidden; */
+	overflow: scroll;
 }
 .questions-list div {
 	display: flex;
 	align-items: center;
-	overflow: hidden;
+	/* overflow: hidden; */
 	gap: 15px;
 }
 .questions-list label {
@@ -96,6 +98,11 @@
 .display-question {
 	display: flex;
 	flex-direction: column;
+}
+.supp {
+    display: flex;
+    justify-content: center;
+    padding-block: 20px;
 }
 .supplementary {
 	width: fit-content;
@@ -174,6 +181,8 @@
 }
 .final-end {
 	padding: 15px;
+	width: fit-content;
+	justify-self: end;
 	background-color: #eb6161;
 	border-radius: 5px;
 	font-weight: bold;
@@ -195,14 +204,6 @@
     font-size: 1.4em;
     font-weight: bold;
 }
-@media screen and (max-width: 1300px) {
-	.guide {
-		display: none;
-	}
-	.pop-end, .pop-end:hover {
-		color: transparent;
-	}
-}
 @media screen and (max-width: 1000px) {
 	.test-cover div {
 		display: flex;
@@ -221,12 +222,6 @@
 	}
 	.questions-list {
 		width: 100%;
-	}
-	.pop-end {
-		display: none;
-	}
-	.final-end {
-		display: block;
 	}
 	#supplementaryText {
 		width: 80%;
@@ -253,6 +248,7 @@
 		font-size: .8em;
 	}
 	.final-end {
+		width: 100%;
 		font-size: 1.2em;
 	}
 	#supplementaryText {

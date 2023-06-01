@@ -1,8 +1,6 @@
 @import "./global.css";
 @import "./test-page.css";
 
-.supp {
-    display: flex;
-    justify-content: center;
-    padding-block: 20px;
+.test-ground {
+    display: block;
 }
